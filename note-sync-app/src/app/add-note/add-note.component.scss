@@ -1,0 +1,42 @@
+@import "../../assets/colors.scss";
+
+.input-card {
+  border-radius: 5px;
+  width: 35vw;
+  display: inline-block;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  cursor: text;
+  padding: 12px 20px;
+
+  .take-note {
+    font-size: 1.1rem;
+    color: $dark-gray;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+
+    .button-close {
+      border-radius: 5px;
+      width: auto;
+      padding: 5px 10px;
+      color: gray;
+      font-weight: 600;
+      &:hover {
+        color: $dark-gray;
+      }
+    }
+  }
+}

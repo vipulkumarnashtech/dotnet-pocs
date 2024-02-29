@@ -1,0 +1,19 @@
+.bg-color-card {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 1px 3px 1px rgba(60, 64, 67, 0.149);
+  border-radius: 8px;
+  z-index: 100;
+  position: absolute;
+  width: 400px;
+  padding: 10px;
+  background-color: white;
+  .item {
+    padding: 20px;
+    border-radius: 50%;
+    &:hover {
+      outline: 2px solid black;
+    }
+  }
+}

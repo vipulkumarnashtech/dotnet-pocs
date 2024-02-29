@@ -1,0 +1,38 @@
+@import "../../assets/colors.scss";
+.cards {
+  margin: 0 5rem;
+
+  .note-card {
+    border: 1px solid $border-light-gray;
+    border-radius: 8px;
+    margin: 0.5rem;
+    min-height: 6rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+    min-width: 250px;
+    position: relative;
+    z-index: 0;
+    .main-content {
+      padding: 0.2rem 1rem 0.6rem;
+      .title {
+        font-weight: 600;
+        padding-bottom: 0.7rem;
+      }
+    }
+
+    .actions {
+      opacity: 0;
+      button {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+  .note-card:hover {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+      0 1px 3px 1px rgba(60, 64, 67, 0.149);
+  }
+  .note-card:hover .actions {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+  }
+}

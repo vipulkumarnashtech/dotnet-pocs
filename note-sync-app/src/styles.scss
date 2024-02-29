@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+@import "./assets/colors.scss";
+li,
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  i {
+    color: rgb(70, 70, 70);
+  }
+}
+
+button:hover {
+  background-color: rgba(211, 211, 211, 0.482);
+  i {
+    color: $dark-gray;
+  }
+}

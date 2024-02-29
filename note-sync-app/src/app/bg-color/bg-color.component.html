@@ -1,0 +1,8 @@
+<ul class="bg-color-card">
+  <li
+    *ngFor="let color of colors"
+    [style.backgroundColor]="color.hexcode"
+    class="item"
+    (click)="changeBgColor(color.hexcode)"
+  ></li>
+</ul>
