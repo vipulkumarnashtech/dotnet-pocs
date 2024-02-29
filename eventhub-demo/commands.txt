@@ -1,0 +1,11 @@
+//create proj
+dotnet new console
+
+//add pkg to SendEvent
+dotnet add package Azure.Messaging.EventHubs
+dotnet add package Azure.Messaging.EventHubs.Producer //Not found, but shown in tut
+
+//add pkg to ReceiveEvent
+dotnet add package Azure.Messaging.EventHubs
+dotnet add package Azure.Messaging.EventHubs.Consumer //Not found, but shown in tut
+dotnet add package Azure.Messaging.EventHubs.Processor
